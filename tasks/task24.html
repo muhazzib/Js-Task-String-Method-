@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    var j=prompt("Enter String");
+        function vowel(string){
+            var x=string;
+            var y=0;
+        var k=0;
+            for(var i=0;i<x.length;i++){
+                if(x.slice(i,i+1)=="a" ||x.slice(i,i+1)=="e"||x.slice(i,i+1)=="i"||x.slice(i,i+1)=="o"||x.slice(i,i+1)=="u"){
+                    y=y+1;
+                }
+                else{
+                    k=k+1;
+                }
+            }
+            document.write("The No of vowels in given string is "+y);
+            document.write("<br>"+"The No of consonants in given string is "+k);
+
+        }
+
+     
+
+        vowel(j);
+    </script>
+</body>
+</html>

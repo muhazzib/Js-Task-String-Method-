@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Input:<span id="one"></span></h1>
+    <h1>Last Character of input: <span id="two"></span></h1>
+
+    <script>
+var x=prompt("Enter any string");
+var a=x.length-1;
+document.getElementById("one").innerHTML=x;
+document.getElementById("two").innerHTML=x.charAt(a);
+
+    </script>
+</body>
+</html>

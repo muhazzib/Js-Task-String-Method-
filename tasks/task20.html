@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var password = prompt('enter password');
+var err = false;
+
+var num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var smallLeters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var capitalLetter = [];
+for (var i = 0; i < smallLeters.length; i++) {
+    var current = smallLeters[i].toUpperCase();
+    capitalLetter.push(current);
+}
+
+
+var firstChar = password[0];
+
+
+if (num.indexOf(firstChar) != -1 || password.length < 6) {
+    console.log(num.indexOf(firstChar));
+    err = true;
+}
+
+
+
+for (var i = 0; i < password.length; i++) {
+    if (num.indexOf(password[i]) == -1 && smallLeters.indexOf(password[i]) == -1 && capitalLetter.indexOf(password[i]) == -1) {
+        err = true;
+    }
+}
+if(err == true){
+    alert('invalid password');
+}
+
+    </script>
+</body>
+</html>

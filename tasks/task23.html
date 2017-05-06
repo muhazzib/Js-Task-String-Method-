@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+     <p>Text: The quick brown fox jumps over the lazy dog</p>
+    <h1 id="two"></h1>
+    <script>
+var x="The quick brown fox jumps over the lazy dog";
+var y=0;
+for(var i=0; i<x.length;i++){
+if(x.slice(i,i+3)==="The" ||x.slice(i,i+3)==="the"){
+y=y+1;
+}
+}
+document.getElementById("two").innerHTML="There are "+y+" occurrence of word 'the'";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+var a=["cake","apple pie","cookie","chips","patties"];
+var x=prompt("Enter item to be search");
+var z=x.toLowerCase();
+var k=false;
+for(var i=0;i<a.length;i++){
+    if(z===a[i]){
+        document.write(x+" is available at index "+a.indexOf(a[i])+" in our bakery");
+    k=true;
+    }
+}
+
+if(k==false){
+
+    document.write("We are sorry,"+x+" is not available in our bakery");
+}
+
+</script>
+</body>
+</html>
